@@ -25,6 +25,7 @@ app.post("/user_router_list", (req: Request, res: Response) => {
       });
 
       res.status(200).send({
+        msg: "ok",
         data: routesList,
       });
     } else {

@@ -4,17 +4,13 @@
 </template>
 
 <script setup lang="ts">
-/* fetch("/api/user_router_list", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({ uid: 3 }),
-})
-  .then((res) => res.json())
-  .then((res) => {
-    console.log(res);
-  }); */
+import { useUser } from "./store/user";
+import { useRoutes } from "./store/routes";
+
+const { initUser } = useUser();
+const { getRoutesList } = useRoutes();
+initUser();
+getRoutesList();
 </script>
 
 <style scoped></style>
