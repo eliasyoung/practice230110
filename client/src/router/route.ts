@@ -29,6 +29,8 @@ export function routerBeforeEach(router: Router, user: any, routes: any) {
       await routes.getRoutes();
       if (routes.getRoutesList) {
         const newRoutes = generateRouter(routes.getRoutesList);
+        console.log(newRoutes);
+
         newRoutes.forEach((route) => {
           router.addRoute(route);
         });
