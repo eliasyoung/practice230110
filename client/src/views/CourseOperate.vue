@@ -1,6 +1,8 @@
 <template>
-  <h1>Hello!</h1>
-  <RouterView />
+  <div>
+    <h1>CourseOperate</h1>
+    <RouterView />
+  </div>
 </template>
 
 <script setup lang="ts"></script>
